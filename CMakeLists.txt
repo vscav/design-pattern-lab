@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 3.13)
 
 project(design-pattern-lab)
 
-# display VERBOSE messages : cmake --log-level=VERBOSE ..
-
 # specify the system
 message(VERBOSE "CMAKE_VERSION           : " ${CMAKE_VERSION})
 message(VERBOSE "CMAKE_SYSTEM_NAME       : " ${CMAKE_SYSTEM_NAME})
@@ -23,9 +21,6 @@ message(VERBOSE "CMAKE_CXX_FLAGS_DEBUG   : " ${CMAKE_CXX_FLAGS_DEBUG})
 message(VERBOSE "CMAKE_CXX_FLAGS_RELEASE : " ${CMAKE_CXX_FLAGS_RELEASE})
 message(VERBOSE "CMAKE_CXX_COMPILER      : " ${CMAKE_CXX_COMPILER} "\n")
 
-# (optional) add a "output" directory in the project binary directory
-file(MAKE_DIRECTORY ${PROJECT_BINARY_DIR}/output)
-
 # (optional) put the binary files in this directory
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
@@ -40,6 +35,10 @@ add_subdirectory(observer)
 # add iterator
 message(STATUS "iterator cmake part ..." )
 add_subdirectory(iterator)
+
+# add strategy
+message(STATUS "strategy cmake part ..." )
+add_subdirectory(strategy)
 
 #set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_BUILD_TYPE Release)
