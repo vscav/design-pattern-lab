@@ -37,5 +37,9 @@ add_subdirectory(singleton)
 message(STATUS "observer cmake part ..." )
 add_subdirectory(observer)
 
+# add iterator
+message(STATUS "iterator cmake part ..." )
+add_subdirectory(iterator)
+
 #set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_BUILD_TYPE Release)

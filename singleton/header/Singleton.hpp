@@ -20,6 +20,7 @@ class Singleton {
         }
         inline int getData() {return _data;};
         inline void setData(int data) {_data = data;};
+        
 };
 
 #endif //SINGLETON_PATTERN_HPP

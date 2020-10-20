@@ -9,6 +9,7 @@
  * a client that implements the Observer interface
  */
 class Client : public Observer {
+private :
 
     int _id;
 

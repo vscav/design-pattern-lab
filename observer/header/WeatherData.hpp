@@ -12,6 +12,8 @@
  * A concrete implementation of the Subject interface
  */
 class WeatherData : public Subject {
+private:
+
     std::vector<Observer*> observers;
 
     float _temp = 0.0f;
