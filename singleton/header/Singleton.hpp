@@ -1,6 +1,9 @@
 #ifndef SINGLETON_PATTERN_HPP
 #define SINGLETON_PATTERN_HPP
 
+/**
+ * Interface for the Singleton
+ */
 class Singleton {
     private:
 

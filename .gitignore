@@ -1,3 +1,12 @@
+# ide settings
+.vscode
+
+# system files
+.DS_Store
+
+# build folder
+build
+
 # Prerequisites
 *.d
 
